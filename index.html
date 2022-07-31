@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
+    <title>CEPinfo</title>
+    <script src="js/index.bundle.js"></script>
+</head>
+<body style="overflow: hidden;">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="img/logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMain" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br>
+        <div class="columns is-mobile is-centered">
+            <div class="column is-narrow-mobile is-narrow-tablet is-half-desktop">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Informações de Endereço
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <form>
+                                <div class="field">
+                                    <label class="label">CEP:</label>
+                                    <div class="control">
+                                        <input class="input" name="cepNumber" id="cepNumber" type="text" maxlength="8" required/>
+                                    </div>
+                                    <p class="help">Digite o número do CEP do local com 9 dígitos</p>
+                                    <label class="label">Logradouro:</label>
+                                    <div class="control">
+                                        <input class="input" name="streetOutput" id="streetOutput" type="text" readonly="readonly"/>
+                                    </div>
+            
+                                    <label class="label">Bairro:</label>
+                                    <div class="control">
+                                        <input class="input" name="neighborhoodOutput" id="neighborhoodOutput" type="text" readonly="readonly"/>
+                                    </div>
+            
+                                    <label class="label">Cidade:</label>
+                                    <div class="control">
+                                        <input class="input" name="cityOutput" id="cityOutput" type="text" readonly="readonly"/>
+                                    </div>
+            
+                                    <div class="control">
+                                    <label class="label">Estado:</label>
+                                        <input class="input" name="estateOutput" id="estateOutput" type="text" readonly="readonly"/>
+                                    </div>
+                                    <br>
+                                    <div class="columns is-mobile is-centered">
+                                        <div class="column is-narrow">
+                                            <button class="button is-primary" type="submit" onclick="getCep(); return false;">Confirmar</button>
+                                            <button class="button" type="submit" onclick="cleanFields(); return false;">Limpar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
