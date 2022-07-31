@@ -32,55 +32,64 @@
         </div>
     </nav>
     <br>
-        <div class="columns is-mobile is-centered">
-            <div class="column is-narrow-mobile is-narrow-tablet is-half-desktop">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            Informações de Endereço
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        <div class="content">
-                            <form>
-                                <div class="field">
-                                    <label class="label">CEP:</label>
-                                    <div class="control">
-                                        <input class="input" name="cepNumber" id="cepNumber" type="text" maxlength="8" required/>
-                                    </div>
-                                    <p class="help">Digite o número do CEP do local com 9 dígitos</p>
-                                    <label class="label">Logradouro:</label>
-                                    <div class="control">
-                                        <input class="input" name="streetOutput" id="streetOutput" type="text" readonly="readonly"/>
-                                    </div>
-            
-                                    <label class="label">Bairro:</label>
-                                    <div class="control">
-                                        <input class="input" name="neighborhoodOutput" id="neighborhoodOutput" type="text" readonly="readonly"/>
-                                    </div>
-            
-                                    <label class="label">Cidade:</label>
-                                    <div class="control">
-                                        <input class="input" name="cityOutput" id="cityOutput" type="text" readonly="readonly"/>
-                                    </div>
-            
-                                    <div class="control">
-                                    <label class="label">Estado:</label>
-                                        <input class="input" name="estateOutput" id="estateOutput" type="text" readonly="readonly"/>
-                                    </div>
-                                    <br>
-                                    <div class="columns is-mobile is-centered">
-                                        <div class="column is-narrow">
-                                            <button class="button is-primary" type="submit" onclick="getCep(); return false;">Confirmar</button>
-                                            <button class="button" type="submit" onclick="cleanFields(); return false;">Limpar</button>
-                                        </div>
+    <div class="columns is-mobile is-centered">
+        <div class="column is-narrow-mobile is-narrow-tablet is-half-desktop">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Informações de Endereço
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <form>
+                            <div class="field">
+                                <label class="label">CEP:</label>
+                                <div class="control">
+                                    <input class="input" name="cepNumber" id="cepNumber" type="text" maxlength="8" required/>
+                                </div>
+                                <p class="help">Digite o número do CEP do local com 9 dígitos</p>
+                                <label class="label">Logradouro:</label>
+                                <div class="control">
+                                    <input class="input" name="streetOutput" id="streetOutput" type="text" readonly="readonly"/>
+                                </div>
+        
+                                <label class="label">Bairro:</label>
+                                <div class="control">
+                                    <input class="input" name="neighborhoodOutput" id="neighborhoodOutput" type="text" readonly="readonly"/>
+                                </div>
+        
+                                <label class="label">Cidade:</label>
+                                <div class="control">
+                                    <input class="input" name="cityOutput" id="cityOutput" type="text" readonly="readonly"/>
+                                </div>
+        
+                                <div class="control">
+                                <label class="label">Estado:</label>
+                                    <input class="input" name="estateOutput" id="estateOutput" type="text" readonly="readonly"/>
+                                </div>
+                                <br>
+                                <div class="columns is-mobile is-centered">
+                                    <div class="column is-narrow">
+                                        <button class="button is-primary" type="submit" onclick="getCep(); return false;">Confirmar</button>
+                                        <button class="button" type="submit" onclick="cleanFields(); return false;">Limpar</button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>CEPinfo</strong> por <a href="https://github.com/rodrigo-vernaschi" target="_blank">Rodrigo Vernaschi</a>. O código fonte é licenciado pelo <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+                O conteúdo da página é licenciado pela <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
