@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/css/all.css"></script>
     <title>CEPinfo</title>
+    <link rel="icon" href="img/icon.svg">
     <script src="js/index.bundle.js"></script>
 </head>
+
 <body style="overflow: hidden;">
     <nav class="navbar is-primary has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -46,33 +49,40 @@
                             <div class="field">
                                 <label class="label">CEP:</label>
                                 <div class="control">
-                                    <input class="input" name="cepNumber" id="cepNumber" type="text" maxlength="8" required/>
+                                    <input class="input" name="cepNumber" id="cepNumber" type="text" maxlength="8"
+                                        required />
                                 </div>
                                 <p class="help">Digite o número do CEP do local com 9 dígitos</p>
                                 <label class="label">Logradouro:</label>
                                 <div class="control">
-                                    <input class="input" name="streetOutput" id="streetOutput" type="text" readonly="readonly"/>
+                                    <input class="input" name="streetOutput" id="streetOutput" type="text"
+                                        readonly="readonly" />
                                 </div>
-        
+
                                 <label class="label">Bairro:</label>
                                 <div class="control">
-                                    <input class="input" name="neighborhoodOutput" id="neighborhoodOutput" type="text" readonly="readonly"/>
+                                    <input class="input" name="neighborhoodOutput" id="neighborhoodOutput" type="text"
+                                        readonly="readonly" />
                                 </div>
-        
+
                                 <label class="label">Cidade:</label>
                                 <div class="control">
-                                    <input class="input" name="cityOutput" id="cityOutput" type="text" readonly="readonly"/>
+                                    <input class="input" name="cityOutput" id="cityOutput" type="text"
+                                        readonly="readonly" />
                                 </div>
-        
+
                                 <div class="control">
-                                <label class="label">Estado:</label>
-                                    <input class="input" name="estateOutput" id="estateOutput" type="text" readonly="readonly"/>
+                                    <label class="label">Estado:</label>
+                                    <input class="input" name="estateOutput" id="estateOutput" type="text"
+                                        readonly="readonly" />
                                 </div>
                                 <br>
                                 <div class="columns is-mobile is-centered">
                                     <div class="column is-narrow">
-                                        <button class="button is-primary" type="submit" onclick="getCep(); return false;">Confirmar</button>
-                                        <button class="button" type="submit" onclick="cleanFields(); return false;">Limpar</button>
+                                        <button class="button is-primary" type="submit"
+                                            onclick="getCep(); return false;">Confirmar</button>
+                                        <button class="button" type="submit"
+                                            onclick="cleanFields(); return false;">Limpar</button>
                                     </div>
                                 </div>
                             </div>
@@ -86,10 +96,14 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <strong>CEPinfo</strong> por <a href="https://github.com/rodrigo-vernaschi" target="_blank">Rodrigo Vernaschi</a>. O código fonte é licenciado pelo <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
-                O conteúdo da página é licenciado pela <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0</a>.
+                <strong>CEPinfo</strong> por <a href="https://github.com/rodrigo-vernaschi" target="_blank">Rodrigo
+                    Vernaschi</a>. O código fonte é licenciado pelo <a
+                    href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+                O conteúdo da página é licenciado pela <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                    target="_blank">CC BY NC SA 4.0</a>.
             </p>
         </div>
     </footer>
 </body>
+
 </html>
